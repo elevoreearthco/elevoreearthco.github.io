@@ -11,6 +11,32 @@
             background-color: #f4f4f4;
         }
 
+        /* Navigation Bar Styling */
+        .navbar {
+            background-color: #333;
+            overflow: hidden;
+            position: fixed;
+            top: 0;
+            width: 100%;
+            z-index: 1000;
+        }
+
+        .navbar a {
+            float: right;
+            display: block;
+            color: #fff;
+            text-align: center;
+            padding: 14px 20px;
+            text-decoration: none;
+            font-size: 1.1em;
+        }
+
+        .navbar a:hover {
+            background-color: #ddd;
+            color: #333;
+        }
+
+        /* Hero Image Styling */
         .hero {
             height: 100vh;
             background-image: url('https://raw.githubusercontent.com/elevoreearthco/elevoreearthco.github.io/refs/heads/main/Docs/Assets/images/hero-1.png');
@@ -29,6 +55,7 @@
             text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
         }
 
+        /* Game Description Section */
         .content-section {
             padding: 50px 20px;
             text-align: center;
@@ -47,6 +74,44 @@
             margin: 0 auto;
         }
 
+        /* Screenshots Section */
+        .screenshot-section {
+            display: flex;
+            flex-wrap: wrap;
+            padding: 20px;
+        }
+
+        .screenshot-box {
+            display: flex;
+            margin-bottom: 40px;
+            width: 100%;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .screenshot-box img {
+            width: 45%;
+            max-width: 500px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .screenshot-description {
+            width: 45%;
+            text-align: left;
+        }
+
+        .screenshot-description h3 {
+            font-size: 2em;
+            margin-bottom: 10px;
+        }
+
+        .screenshot-description p {
+            font-size: 1.2em;
+            color: #666;
+        }
+
+        /* Call to Action Section */
         .cta-section {
             background-color: #3498db;
             color: #fff;
@@ -87,19 +152,64 @@
     </style>
 </head>
 <body>
+
+    <!-- Navigation Bar -->
+    <div class="navbar">
+        <a href="https://elevoreearthco.github.io/">Privacy Policy</a>
+    </div>
+
     <!-- Hero Banner -->
     <section class="hero">
-        <h1> </h1>
+        <h1>Locked At Level One</h1>
     </section>
 
     <!-- Game Description Section -->
     <section class="content-section">
-        <h2>Locked At Level One</h2>
+        <h2>About the Game</h2>
         <p>
             Enter the mysterious world of <strong>Elevore Earth</strong> in the most immersive VR RPG experience ever created. 
             As Slayer, a level one playtester, you'll uncover dark secrets hidden within a world where NPCs have gone missing, and leveling up is impossible. 
             Explore, fight, and survive in a fully interactive environment with limitless possibilities.
         </p>
+    </section>
+
+    <!-- Screenshot Sections -->
+    <section class="screenshot-section">
+        <!-- Screenshot 1 -->
+        <div class="screenshot-box">
+            <img src="path/to/screenshot1.png" alt="Screenshot 1">
+            <div class="screenshot-description">
+                <h3>Explore Unique Worlds</h3>
+                <p>Experience beautiful, interactive environments in Elevore Earth, each with its own unique atmosphere and hidden secrets to discover.</p>
+            </div>
+        </div>
+
+        <!-- Screenshot 2 -->
+        <div class="screenshot-box">
+            <img src="path/to/screenshot2.png" alt="Screenshot 2">
+            <div class="screenshot-description">
+                <h3>Engage in Intense Combat</h3>
+                <p>Battle enemies in fast-paced, immersive combat as you journey through the world, using weapons and tactics to gain the upper hand.</p>
+            </div>
+        </div>
+
+        <!-- Screenshot 3 -->
+        <div class="screenshot-box">
+            <img src="path/to/screenshot3.png" alt="Screenshot 3">
+            <div class="screenshot-description">
+                <h3>Uncover Hidden Secrets</h3>
+                <p>Unravel the mysteries behind the missing NPCs and discover the dark truth that lies beneath the surface of the game world.</p>
+            </div>
+        </div>
+
+        <!-- Screenshot 4 -->
+        <div class="screenshot-box">
+            <img src="path/to/screenshot4.png" alt="Screenshot 4">
+            <div class="screenshot-description">
+                <h3>Fully Interactive Environment</h3>
+                <p>Almost every object in the environment is interactable, allowing you to shape your experience and interact with the world in new ways.</p>
+            </div>
+        </div>
     </section>
 
     <!-- Coming Soon Section -->
